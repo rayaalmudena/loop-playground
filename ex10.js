@@ -27,5 +27,47 @@
 let hora_actual = 8;
 let hora_dormir = 24;
 
+while (hora_actual < hora_dormir) {
+    switch (hora_actual) {
+        case 7:
+            console.log(`A las ${hora_actual}, el sim esta durmiendo`);
+            break;
+        case 8:
+            console.log(`A las ${hora_actual}, el sim se despierta`);
+            break;
+        case 9:
+            console.log(`A las ${hora_actual}, el sim desayuna`);
+            break;
+        case 10:
+        case 11:
+        case 12:
+        case 13:
+        case 14:
+        case 15:
+        case 16:
+            console.log(`A las ${hora_actual}, el sim estudia Front End`);
+            break;
+        case 17:
+            console.log(`A las ${hora_actual}, siesta`);
+            break;
+        case 18:
+        case 19:
+        case 20:
+        case 21:
+            console.log(`A las ${hora_actual}, el sim tiene tiempo libre`);
+            break;
+        case 22:
+            console.log(`A las ${hora_actual}, el sim cena`);
+            break;
+        case 23:
+            console.log(`A las ${hora_actual}, el sim se va a dormir`);
+            break;
+        default:
+            console.log(`Hora invalida, el sim ha muerto`);
+            break;
+    }
+    hora_actual++;
+}
+
 
 
